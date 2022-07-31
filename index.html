@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Forcast</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <img src="images/sunny.png" alt="" width="50" />
+
+    <h1>Weather</h1>
+    <form id="search-form">
+      <input
+        type="text"
+        placeholder="Search for a city"
+        autocomplete="off"
+        autofocus="on"
+        id="search-text-input"
+      />
+      <input type="submit" value="Search" />
+    </form>
+
+    <h2><div id="currentTempature"></div></h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <ul>
+            <li class="day">Day 1</li>
+            <li class="tempImage">
+              <img src="images/partly cloudy.png" alt="" width="50" />
+            </li>
+            <li class="highLow">---°C/---°C</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <ul>
+            <li class="day">Day 2</li>
+            <li class="tempImage">
+              <img src="images/raining.png" alt="" width="50" />
+            </li>
+            <li class="highLow">---°C/---°C</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <ul>
+            <li class="day">Day 3</li>
+            <li class="tempImage">
+              <img src="images/partly cloudy.png" alt="" width="50" />
+            </li>
+            <li class="highLow">---°C/---°C</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <ul>
+            <li class="day">Day 4</li>
+            <li class="tempImage">
+              <img src="images/snow.png" alt="" width="50" />
+            </li>
+            <li class="highLow">---°C/---°C</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <ul>
+            <li class="day">Day 5</li>
+            <li class="tempImage">
+              <img src="images/cloudy.png" alt="" width="50" />
+            </li>
+            <li class="highLow">---°C/---°C</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
