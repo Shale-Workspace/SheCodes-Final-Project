@@ -1,6 +1,6 @@
 let searchInput = document.querySelector("#search-text-input");
 const apiKey = "e441798f9c023ade80e4d84933e39e59";
-
+let celciusTempature = null;
 function search(event) {
   event.preventDefault();
 
@@ -15,12 +15,31 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
 function showTempature(response) {
-  console.log(response.data);
-  let h2 = document.querySelector("#currentTempature");
-  h2.innerHTML = `${Math.round(response.data.main.temp)}`;
+  celciusTempature = `${Math.round(response.data.main.temp)}`;
+  let tempatureDisplay = document.querySelector("#currentTempature");
+  tempatureDisplay.innerHTML = `${Math.round(response.data.main.temp)}`;
   let conditionValue = document.querySelector("#condition");
   conditionValue.innerHTML = `${response.data.weather[0].description}`;
 
   let windSpeedValue = document.querySelector("#windSpeed");
   windSpeedValue.innerHTML = `${Math.round(response.data.wind.speed)}`;
 }
+
+function displayFahrenheitTempature(event) {
+  event.preventDefault();
+  let tempatureDisplay = document.querySelector("#currentTempature");
+  let fahrenheitTempature = (celciusTempature * 9) / 5 + 32;
+  tempatureDisplay.innerHTML = Math.round(fahrenheitTempature);
+}
+
+function displayCelciusTempature(event) {
+  event.preventDefault();
+  let tempatureDisplay = document.querySelector("#currentTempature");
+  tempatureDisplay.innerHTML = Math.round(celciusTempature);
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheitTempature);
+
+let celciusLink = document.querySelector("#celcius-link");
+celciusLink.addEventListener("click", displayCelciusTempature);
