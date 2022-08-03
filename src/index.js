@@ -17,5 +17,10 @@ form.addEventListener("submit", search);
 function showTempature(response) {
   console.log(response.data);
   let h2 = document.querySelector("#currentTempature");
-  h2.innerHTML = `${Math.round(response.data.main.temp)}°C`;
+  h2.innerHTML = `${Math.round(response.data.main.temp)}`;
+  let conditionValue = document.querySelector("#condition");
+  conditionValue.innerHTML = `${response.data.weather[0].description}`;
+
+  let windSpeedValue = document.querySelector("#windSpeed");
+  windSpeedValue.innerHTML = `${Math.round(response.data.wind.speed)}`;
 }

@@ -4,13 +4,23 @@ h1 {
   text-align: center;
   line-height: 50px;
 }
-h2 {
+.weather-tempature strong {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(100, 149, 237);
+  text-align: center;
+  line-height: normal;
+  font-size: 64px;
+  margin-top: 10px;
+  padding: 10px;
+}
+h3 {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(100, 149, 237);
   text-align: center;
   line-height: 48px;
   margin-top: 10px;
   padding: 10px;
+  text-transform: capitalize;
 }
 
 form {
