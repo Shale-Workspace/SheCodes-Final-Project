@@ -3,21 +3,35 @@ h1 {
   color: #3e4a61;
   text-align: center;
   line-height: 50px;
+  font-size: 64px;
+  text-transform: capitalize;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(100, 149, 237);
+  text-align: center;
+  line-height: normal;
+  margin-top: 10px;
+  padding: 10px;
 }
 .weather-tempature strong {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(100, 149, 237);
   text-align: center;
   line-height: normal;
-  font-size: 64px;
+  font-size: 58px;
   margin-top: 10px;
   padding: 10px;
+}
+.weather-tempature .units {
+  position: relative;
+  font-size: 16px;
+  top: -30px;
 }
 h3 {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(100, 149, 237);
   text-align: center;
-  line-height: 48px;
   margin-top: 10px;
   padding: 10px;
   text-transform: capitalize;
