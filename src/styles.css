@@ -2,17 +2,20 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #3e4a61;
   text-align: center;
-  line-height: 50px;
   font-size: 64px;
   text-transform: capitalize;
 }
+img {
+  display: block;
+  margin: auto;
+}
 h2 {
+  display: block;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(100, 149, 237);
   text-align: center;
   line-height: normal;
-  margin-top: 10px;
-  padding: 10px;
+  margin: auto;
 }
 .weather-tempature strong {
   font-family: Arial, Helvetica, sans-serif;
@@ -20,7 +23,7 @@ h2 {
   text-align: center;
   line-height: normal;
   font-size: 58px;
-  margin-top: 10px;
+
   padding: 10px;
 }
 .weather-tempature .units {
@@ -32,7 +35,7 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(100, 149, 237);
   text-align: center;
-  margin-top: 10px;
+
   padding: 10px;
   text-transform: capitalize;
 }

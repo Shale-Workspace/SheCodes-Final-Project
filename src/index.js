@@ -16,17 +16,24 @@ form.addEventListener("submit", search);
 
 function showTempature(response) {
   celciusTempature = `${Math.round(response.data.main.temp)}`;
-  let tempatureDisplay = document.querySelector("#currentTempature");
-  tempatureDisplay.innerHTML = `${Math.round(response.data.main.temp)}`;
-  let conditionValue = document.querySelector("#condition");
-  conditionValue.innerHTML = `${response.data.weather[0].description}`;
 
+  let tempatureDisplay = document.querySelector("#currentTempature");
+  let conditionValue = document.querySelector("#condition");
   let windSpeedValue = document.querySelector("#windSpeed");
+  let iconValue = document.querySelector("#icon");
+
+  tempatureDisplay.innerHTML = `${Math.round(response.data.main.temp)}`;
+  conditionValue.innerHTML = `${response.data.weather[0].description}`;
   windSpeedValue.innerHTML = `${Math.round(response.data.wind.speed)}`;
+  iconValue.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function displayFahrenheitTempature(event) {
   event.preventDefault();
+  ("");
   let tempatureDisplay = document.querySelector("#currentTempature");
   let fahrenheitTempature = (celciusTempature * 9) / 5 + 32;
   tempatureDisplay.innerHTML = Math.round(fahrenheitTempature);
