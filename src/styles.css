@@ -69,52 +69,6 @@ button:hover {
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.column {
-  float: left;
-  width: 20%;
-  padding: 0 10px;
-}
-
-.row {
-  margin: 0 -5px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-.card {
-  padding: 16px;
-  text-align: center;
-}
-ul {
-  list-style-type: none;
-}
-.day {
-  font-size: 25px;
-  font-weight: bold;
-  color: cornflowerblue;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.tempImage {
-  padding: 16px;
-}
-.highLow {
-  color: #d9dad7;
-}
 .footer {
   text-align: center;
   font-size: small;
