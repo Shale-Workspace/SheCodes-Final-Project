@@ -11,7 +11,7 @@
   <body>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <h1>Weather</h1>
+
     <form id="search-form">
       <input
         type="text"
@@ -22,6 +22,7 @@
       />
       <input type="submit" value="Search" />
     </form>
+        <h1>Weather</h1>
     <img
     src="src/images/sunny.png"
    
@@ -37,7 +38,12 @@
     </h2>
 
     <h3>
-    
+      <ul>
+        <li id="condition"></li>
+        <li>Wind Speed: <span id="windSpeed"></span> km/h</li>
+      </ul>
+    </h3>
+  
     <p class="footer">
       Made by Shale Monds, see on
       <a href="https://github.com/Shale-Workspace/SheCodes-Final-Project"
